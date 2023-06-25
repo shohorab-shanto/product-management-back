@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Providers;
-use App\Models\PartStock;
-use App\Observers\StockObserver;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -30,6 +28,5 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-        PartStock::observe(StockObserver::class);
     }
 }

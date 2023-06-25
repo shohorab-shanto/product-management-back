@@ -88,8 +88,8 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function details()
-    {
-        return $this->hasOne(CompanyUser::class);
-    }
+    // public function details()
+    // {
+    //     return $this->hasOne(CompanyUser::class);
+    // }
 }
